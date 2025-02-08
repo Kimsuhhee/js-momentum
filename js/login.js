@@ -5,6 +5,7 @@ const h1 = document.querySelector(".greet");
 
 function login(event) {
   event.preventDefault();
+  if (input.value === "") return;
 
   //로그인 폼 안보이게
   form.classList.add("hidden");
