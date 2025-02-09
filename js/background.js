@@ -7,7 +7,7 @@ const images = [
   "image6.jpg",
 ];
 
-const randNum = Math.ceil(Math.random() * images.length);
+const randNum = Math.floor(Math.random() * images.length);
 const img = document.createElement("img");
 img.src = `images/${images[randNum]}`;
 document.body.appendChild(img);

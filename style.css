@@ -11,6 +11,10 @@ body {
   font-family: "42dot Sans", serif;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
 img {
   position: absolute;
   top: 0;
@@ -49,6 +53,16 @@ input:focus {
   outline: none;
 }
 
+button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .todo-form {
   padding: 20px;
   text-align: center;
@@ -58,18 +72,10 @@ input:focus {
   list-style: none;
 }
 
-.todo-item button {
-  background: none;
-  border: none;
-}
-
-.todo-item button:hover {
-  cursor: pointer;
-}
-
 .quote {
   position: fixed;
   bottom: 0;
+  font-size: 15px;
 }
 
 .quote span:first-child::after,
