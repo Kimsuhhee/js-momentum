@@ -9,6 +9,13 @@ function saveToDo(newTodoObj) {
   localStorage.setItem("todo-list", JSON.stringify(todoArray));
 }
 
+function deleteToDo(event) {
+  const target = event.target.parentElement;
+  target.remove();
+  todoArray = todoArray.filter((todo) => todo.id !== parseInt(target.id));
+  saveToDo();
+}
+
 function addTodoItem(event) {
   event.preventDefault();
   const newTodo = todo_input.value;
@@ -29,10 +36,13 @@ function displayTodo(newTodo) {
   const span = document.createElement("span");
   const delete_btn = document.createElement("button");
   todo_item.className = "todo-item";
+  todo_item.id = newTodo.id;
   span.innerText = newTodo.todo;
   delete_btn.innerText = "❌";
-  span.appendChild(delete_btn);
+  //todo 삭제 클릭 이벤트
+  delete_btn.addEventListener("click", deleteToDo);
   todo_item.appendChild(span);
+  todo_item.appendChild(delete_btn);
   todo_list.appendChild(todo_item);
 }
 
