@@ -66,3 +66,13 @@ input:focus {
 .todo-item button:hover {
   cursor: pointer;
 }
+
+.quote {
+  position: fixed;
+  bottom: 0;
+}
+
+.quote span:first-child::after,
+.quote span:first-child::before {
+  content: '"';
+}
