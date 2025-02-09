@@ -4,27 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Momentum</title>
   </head>
   <body>
-    <div class="clock">00:00</div>
-    <form class="login-form">
-      <input type="text" required />
-      <button>login</button>
-    </form>
-    <h1 class="greet"></h1>
+    <div class="wrap">
+      <div class="clock">00:00</div>
+      <form class="login-form">
+        <input type="text" required />
+        <button>login</button>
+      </form>
+      <h1 class="greet"></h1>
 
-    <form class="todo-form hidden">
-      <h2>What is your focus for today?</h2>
+      <form class="todo-form hidden">
+        <h2>What is your focus for today?</h2>
 
-      <input type="text" />
-      <button>enter</button>
-    </form>
+        <input type="text" />
+        <button>enter</button>
+      </form>
 
-    <ul class="todo-list">
-      <!-- <li class="todo-item"></li> -->
-    </ul>
-
+      <ul class="todo-list">
+        <!-- <li class="todo-item"></li> -->
+      </ul>
+    </div>
     <script src="./js/login.js"></script>
     <script src="./js/clock.js"></script>
     <script src="./js/todo.js"></script>
