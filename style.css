@@ -76,3 +76,14 @@ input:focus {
 .quote span:first-child::before {
   content: '"';
 }
+
+.weather {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.weather span:first-child::after {
+  content: "℃";
+}
